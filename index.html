@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fortnite</title>
+    <title>$w17chyduc|<</title>
     <style>
         body {
             background-color: #000000;
             color: black;
-            font-family: 'Lucida Console';
+            font-family: 'Courier New';
             margin: 0;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
         }
         .window {
             width: 200px;
@@ -22,7 +25,22 @@
             border: 2px solid #555;
             border-radius: 5px;
             /*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);*/
+            position: absolute;
         }
+
+        .windowsmall {
+            width: 650px;
+            height: 500px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background: white;
+            border: 2px solid #555;
+            border-radius: 5px;
+            /*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);*/
+            position: absolute;
+        }
+
         .window-header {
             width: 100%;
             height: 30px;
@@ -34,17 +52,101 @@
             text-align: right;
             font-weight: bold;
             box-sizing: border-box;
+            position: relative; /* Needed for absolute positioning of .window-title */
         }
+
+        .window-title {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10; /* Ensures it appears above .window-header */
+            pointer-events: none; /* Prevents it from interfering with interactions */
+        }
+
+
         .window-content {
             padding: 10px;
             text-align: center;
             color: black;
         }
+
+        .window-contentbody {
+            padding: 10px;
+   
+            color: black;
+        }
+
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min(700px, calc(100% - 40px)); 
+            height: min(910px, calc(100% - 40px)); 
+
+            min-width: 300px; 
+            min-height: 400px; 
+
+     
+            box-sizing: border-box; 
+            padding: 20px; 
+        }
+
+
+
+
     </style>
 </head>
 <body>
 
-    <div class="window" id="window1" style="top: 100px; left: 100px;">
+
+    <div class="container">
+
+    <div class="windowsmall" id="windowbody" style="top: 750px; left: 0px;">
+        <div class="window-header">- ◻ x</div>
+        <div class="window-title">untitled.txt</div>
+        <div class="window-contentbody">
+
+            <span>
+                hi, i'm switchyduck, you can find me on <a href="https://x.com/Switchyduck">twitter.</a><br>
+                I also use discord, my name is switchyduck over there aswell
+            </span>
+            <br><br>
+
+            here are some of my other links: <br><center>
+                <a href="https://steamcommunity.com/id/switchyduck/">steam</a> <span><strong>⊹</strong></span>
+                <a href="https://en.pronouns.page/@switchyduck">pronouns</a> <span><strong>⊹</strong></span>
+                <a href="https://soundcloud.com/switchyduck">soundcloud</a> <span><strong>⊹</strong></span>
+                <a href="https://stats.fm/switchyduck">stats fm</a>
+            </center><br>
+
+            <center>
+                <span><strong>About me</strong></span>
+            </center>
+            <br>
+            <span>I'm a HUGE fan of johnnascus (got the chaos symbol that's in the design above from him), outside from that i like listening to music artists like rural internet, 8485, death insurance and CPU buddha [ ;) ]]<br><br>
+                       In terms of games, i like fighting games a lot (specifically guilty gear strive) but i'm also a huge fan of pokémon! [Blaziken & Hatterene are the best]]<br><br>
+                       I also really like food. burgers and such<br><br>
+            </span>
+
+            <center>
+                <span><strong>DNI</strong></span>
+            </center>
+            <br>
+            <span>i don't really have a dni but i'm not a fan of pedophiles, bfdi fans & jjba fans (i will block if u are unless i know you[barring the pedophile part])</span>
+
+        </div>
+    </div>
+
+
+    <div class="window" id="window1" style="top: 100px; left: 50px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -58,7 +160,7 @@
         </div>
     </div>
 
-    <div class="window" id="window2" style="top: 100px; left: 450px;">
+    <div class="window" id="window2" style="top: 100px; left: 400px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -72,7 +174,7 @@
         </div>
     </div>
 
-    <div class="window" id="window3" style="top: 450px; left: 100px;">
+    <div class="window" id="window3" style="top: 450px; left: 50px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -87,7 +189,7 @@
     </div>
 
 
-    <div class="window" id="window4" style="top: 450px; left: 450px;">
+    <div class="window" id="window4" style="top: 450px; left: 400px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -101,7 +203,7 @@
         </div>
     </div>
 
-    <div class="window" id="windowa" style="top: 50px; left: 280px;">
+    <div class="window" id="windowa" style="top: 50px; left: 230px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -115,7 +217,7 @@
         </div>
     </div>
 
-    <div class="window" id="windowb" style="top: 500px; left: 280px;">
+    <div class="window" id="windowb" style="top: 500px; left: 230px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -129,7 +231,7 @@
         </div>
     </div>
 
-    <div class="window" id="windowc" style="top: 280px; left: 50px;">
+    <div class="window" id="windowc" style="top: 280px; left: 0px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -143,7 +245,7 @@
         </div>
     </div>
 
-    <div class="window" id="windowd" style="top: 280px; left: 500px;">
+    <div class="window" id="windowd" style="top: 280px; left: 450px;">
         <div class="window-header">- ◻ x</div>
         <div class="window-content">
             <center>
@@ -158,32 +260,11 @@
     </div>
 
 
-    <script>
-        function makeDraggable(windowElement) {
-            let header = windowElement.querySelector(".window-header");
-            let offsetX, offsetY, isDragging = false;
+    </div >
 
-            header.addEventListener("mousedown", (e) => {
-                isDragging = true;
-                offsetX = e.clientX - windowElement.offsetLeft;
-                offsetY = e.clientY - windowElement.offsetTop;
-                header.style.cursor = "grabbing";
-            });
+        <script>
 
-            document.addEventListener("mousemove", (e) => {
-                if (!isDragging) return;
-                windowElement.style.left = e.clientX - offsetX + "px";
-                windowElement.style.top = e.clientY - offsetY + "px";
-            });
-
-            document.addEventListener("mouseup", () => {
-                isDragging = false;
-                header.style.cursor = "grab";
-            });
-        }
-
-        document.querySelectorAll(".window").forEach(makeDraggable);
-    </script>
+        </script>
 
 </body>
 </html>
