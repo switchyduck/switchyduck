@@ -1,4 +1,4 @@
-### i'm very based
+### Hi, my name is Switchyduck. My background consists of strawberry and duck. The more you stay on this profile, my switchy goes duck and I'm not switchyduck no more. Leave the goddamn profile!
 
 <!--
 **switchyduck/switchyduck** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
